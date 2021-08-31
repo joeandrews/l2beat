@@ -16,7 +16,7 @@ export const aztec: Project = {
     {
       address: '0x737901bea3eeb88459df9ef1BE8fF3Ae1B42A2ba',
       sinceBlock: 11967192,
-      tokens: ['ETH', 'DAI'],
+      tokens: ['ETH', 'DAI', 'renBTC'],
     },
   ],
   details: {
@@ -139,14 +139,11 @@ export const aztec: Project = {
             name: 'AztecFeeDistributor',
           },
           {
-            address: '0xDCC80dB987bf63f01b7bafCED6230DE5002eF874',
+            address: '0xd3723509cfa2c82b0d4a64f61b678018c0dfdf54',
             name: 'TurboVerifier',
-            // TurboVerifier uses unverified libraries https://etherscan.io/address/0x8eefd2d44952ddcb94bb383d4c0aa670f941c784
-            description:
-              'The source code of the VerificationKeys library used by this contract is not verified on Etherscan.',
           },
         ],
-        risks: [CONTRACTS.UNVERIFIED_RISK],
+        risks: [],
       },
     },
     news: [
